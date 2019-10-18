@@ -317,7 +317,7 @@ configureJupyter[specs_Association, removeQ_?BooleanQ, removeAllQ_?BooleanQ] :=
 			];
 
 			(* create a list of arguments that directs Jupyter to install from the staging directory *)
-			commandArgs = {jupyterPath, "kernelspec", "install", "--user", tempDir};,
+			commandArgs = {jupyterPath, "kernelspec", "install", tempDir};,
 			failureMessage = notremoved;
 			conflictMessage = removeconflict;
 			(* create a list of arguments that directs Jupyter to remove ... *)
